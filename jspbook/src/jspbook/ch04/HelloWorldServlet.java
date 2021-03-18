@@ -30,15 +30,20 @@ public class HelloWorldServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.setContentType("text/html;charset=utf-8");
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		
 		
 		
 		PrintWriter out = response.getWriter();
 		
 		out.println("<HTML>");
-		out.println("<HEAD> <TITLE> Hello World </TITLE></HEAD>");
-		out.println("<BODY><H2>hello world : 헬로 월드</H2>");
+		out.println("<HEAD> <TITLE> 박혜진 </TITLE></HEAD>");
+		out.println("<BODY><H2>박혜진</H2>");
+		
+		for(int i = 1; i<= 10; i++) {
+			out.println(i);
+			out.println("<br>");
+		}
 		out.println("</BODY></HTML>");
 	}
 
