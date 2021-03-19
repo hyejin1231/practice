@@ -6,6 +6,7 @@
 <img src="https://user-images.githubusercontent.com/59273552/111595646-ad669400-880f-11eb-8bb8-cdfb5ffb93a2.PNG" width="500">
 
 ##### form데이터 처리하기 2021.03.19
-<img src="https://user-images.githubusercontent.com/59273552/111732333-90d26680-88b8-11eb-815c-b160684ba7bb.PNG" width="200">
-<img src="https://user-images.githubusercontent.com/59273552/111732338-929c2a00-88b8-11eb-9071-33fd1145bdbc.PNG" width="200">
+
+<img src="https://user-images.githubusercontent.com/59273552/111732333-90d26680-88b8-11eb-815c-b160684ba7bb.PNG" width="300">
+<img src="https://user-images.githubusercontent.com/59273552/111732338-929c2a00-88b8-11eb-9071-33fd1145bdbc.PNG" width="300">
 
