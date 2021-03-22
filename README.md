@@ -12,7 +12,7 @@
 
 ##### jsp 내장객체 2021.03.22
 
-<img src="https://user-images.githubusercontent.com/59273552/111944367-d55d3c80-8b1a-11eb-9d94-9b63e3ada8f1.PNG" width="400">
+<img src="https://user-images.githubusercontent.com/59273552/111944367-d55d3c80-8b1a-11eb-9d94-9b63e3ada8f1.PNG" width="300">
 <img src="https://user-images.githubusercontent.com/59273552/111944369-d7270000-8b1a-11eb-9179-343f82525ef7.PNG" width="400">
 <img src="https://user-images.githubusercontent.com/59273552/111944373-d8f0c380-8b1a-11eb-99ee-23ee7472dae1.PNG" width="400">
 
