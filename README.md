@@ -21,3 +21,7 @@
 <img src="https://user-images.githubusercontent.com/59273552/111944379-dc844a80-8b1a-11eb-8275-cc1b025c032a.PNG" width="400">
 <img src="https://user-images.githubusercontent.com/59273552/111944382-de4e0e00-8b1a-11eb-815b-1d5fdaa9ed01.PNG" width="400">
 
+##### jdbc 연습 게시판 만들기2021.03.25 
+<img src="https://user-images.githubusercontent.com/59273552/112421087-c7552900-8d71-11eb-96ba-fe6a0bd59626.PNG" width="400">
+<img src="https://user-images.githubusercontent.com/59273552/112421091-ca501980-8d71-11eb-827d-084e01795b4f.PNG" width="400">
+
