@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> 제품 목록 </title>
+</head>
+<script>
+function getFromServer() {
+	var req;
+	var product;
+	if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+	req = new XMLHttpRequest();
+	}
+	else {// code for IE6, IE5
+	req = new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	req.onreadystatechange = function () {
+	if (req.readyState == 4 && req.status == 200) {
+		 product = JSON.parse(req.responseText);
+		document.getElementById("pdname").innerHTML = product[0].pdname;
+		document.getElementById("pdcode").innerHTML = product[0].pdcode;
+		document.getElementById("pdcompany").innerHTML = product[0].pdcompany;
+		
+		document.getElementById("pdname1").innerHTML = product[1].pdname;
+		document.getElementById("pdcode1").innerHTML = product[1].pdcode;
+		document.getElementById("pdcompany1").innerHTML = product[1].pdcompany;
+		
+		
+
+	}
+	}
+	req.open("GET", "product_data.json", true);
+	req.send();
+	}
+	setTimeout("getFromServer()", 0);
+</script>
+<body>
+<div align="center">
+<H2> 제품 목록 </H2>
+<HR>
+<table border=1 cellspacing="1" cellpadding="5">
+<tr><td>제품명</td><td>제품코드</td><td>제조사</td></tr>
+
+
+<tr>
+	<td id = "pdname"></td>
+	<td id = "pdcode"></td>
+	<td id = "pdcompany"></td>
+</tr>
+
+<tr>
+	<td id = "pdname1"></td>
+	<td id = "pdcode1"></td>
+	<td id = "pdcompany1"></td>
+</tr>
+
+</table>
+
+</form>
+</div>
+</html>
