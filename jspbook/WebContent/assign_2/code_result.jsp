@@ -52,7 +52,7 @@ div.a {font-size : 5px;}
 <table border=1 cellspacing="1" cellpadding="5">
 <%
 	try{
-		String sql = "select pdcom from product where pdcode = ?";
+		String sql = "select pdcom from product_search where pdcode = ?";
 		pstmt = conn.prepareStatement(sql);
 		pstmt.setString(1, request.getParameter("pdcode"));
 		

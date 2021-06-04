@@ -11,6 +11,7 @@
 <html lang = "ko">
 <head>
 <meta charset="UTF-8">
+<%@ include file="inc_header.html"%>
 <title>List Page</title>
 <style>
 table {width : 100%;}
@@ -23,9 +24,9 @@ table, th, td {
 <body>
 
 
-
-	<hr>
-		<h2>리스트</h2>
+	<div class="container shadow mx-auto mt-5 p-5 w-60">
+		<h2>list</h2>
+		<hr>
 		<table>
 			<tr>
 				<th>번호</th>
@@ -50,10 +51,10 @@ table, th, td {
 		
 	</table>
 	<br>
-	<button onclick = "location.href = 'write.jsp'">신규등록</button>	
+	<button onclick = "location.href = 'write.jsp'" class="btn btn-outline-success">신규등록</button>	
 
 
-
+</div>
 </body>
 </html>
 

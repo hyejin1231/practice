@@ -34,8 +34,14 @@
 <html lang = "ko">
 <head>
 <meta charset="UTF-8">
+<%@ include file="inc_header.html"%>
 <title>읽기 <%= subject %></title>
 </head>
+<style>
+.a {
+margin: 20px 0px 0px 0px;
+}
+</style>
 <script>
 	function chkDelete(wr_uid) {
 		var r = confirm("삭제하시겠습니까?");
@@ -46,8 +52,11 @@
 	}
 </script>
 <body>
-<h2>읽기 <%=subject %></h2>
-<br>
+<div class="container shadow mx-auto mt-5 p-5 w-60">
+<h2><%=subject %></h2>
+<hr>
+
+<div class="container shadow mx-auto mt-5 p-5 w-60">
 wr_uid : <%= wr_uid %><br>
 작성자 : <%= name %><br>
 제목: <%= subject %><br>
@@ -60,10 +69,16 @@ wr_uid : <%= wr_uid %><br>
 </div>
 <hr>
 <br>
-<button onclick = "location.href = 'update.jsp?wr_uid=<%=wr_uid %>'">수정하기</button>
-<button onclick = "location.href = 'list.jsp'">목록보기</button>
-<button onclick = "chkDelete(<%=wr_uid%>)">삭제하기</button>
-<button onclick = "location.href=  'write.jsp'">신규등록</button>
+</div>
+
+<div class = "a">
+<button onclick = "location.href = 'update.jsp?wr_uid=<%=wr_uid %>'" class="btn btn-warning ml-2">수정하기</button>
+<button onclick = "location.href = 'list.jsp'" class="btn btn-success ml-2">목록보기</button>
+<button onclick = "chkDelete(<%=wr_uid%>)" class="btn btn-secondary ml-2">삭제하기</button>
+<button onclick = "location.href=  'write.jsp'" class="btn btn-outline-success ml-2">신규등록</button>
+</div>
+
+</div>
 </body>
 </html>
 

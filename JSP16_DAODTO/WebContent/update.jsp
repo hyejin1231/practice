@@ -23,8 +23,14 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
+<%@ include file="inc_header.html"%>
 <title>수정 <%= subject %></title>
 </head>
+<style>
+.a {
+margin: 20px 0px 0px 0px;
+}
+</style>
 <script>
 // form 검증 
 function chkSubmit() {
@@ -50,23 +56,29 @@ function chkSubmit() {
 }
 </script>
 <body>
-<h2>수정</h2>
+<div class="container shadow mx-auto mt-5 p-5 w-60">
+<h2>update</h2>
+<hr>
 <%--내용 과 제목만 수정 가능. submit 하기전에 검증 --%>
 <form name="frm" action="updateOk.jsp" 
-	method="post" onsubmit="return chkSubmit()">
+	method="post" onsubmit="return chkSubmit()" class="container shadow mx-auto mt-5 p-5 w-60">
 	
-<input type = "hidden" name = "wr_uid" value = "<%=wr_uid %>"/>
+<input type = "hidden" name = "wr_uid" value = "<%=wr_uid %>" style="margin: 10px 10px 10px 10px;"/>
 작성자 : <%= name %><br>  <%-- 작성자 이름은 변경 불가 --%>
 제목 : 
-<input type="text" name="wr_subject" value="<%= subject%>"><br>
-내용 :
-<textarea name="wr_content"><%= content %></textarea>
+<input type="text" name="wr_subject" value="<%= subject%>" style="margin: 10px 10px 10px 10px;"><br>
+내용 : <br>
+<textarea name="wr_content" style="margin: 10px 0px 0px 0px;"><%= content %></textarea>
 <br><br>
-<input type="submit" value="수정"/>
+<input type="submit" value="수정" class="btn btn-warning ml-2"/>
 </form>
+<div class = "a">
+<button onclick="history.back()" class="btn btn-success ml-2">이전으로</button>
+<button onclick="location.href = 'list.jsp'" class="btn btn-secondary ml-2">목록보기</button>
+</div>
 
-<button onclick="history.back()">이전으로</button>
-<button onclick="location.href = 'list.jsp'">목록보기</button>
+
+</div>
 
 </body>
 </html>
