@@ -4,7 +4,6 @@
 <jsp:useBean id="dao" class= "com.lec.beans.WriteDAO"/>
 <%
 	int wr_uid = Integer.parseInt(request.getParameter("wr_uid"));
-	// ※ 이 단계에서 parameter 검증 필요
 %>
 <%
 	// dao를 사용한 트랜잭션 
