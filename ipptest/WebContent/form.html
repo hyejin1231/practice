@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>회원 등록</title>
+</head>
+<style>
+	table{
+		width : 600px;
+	}
+		
+</style>
+<body>
+<div align="center">
+	<h2>회원 등록</h2>
+	<form action="member_insert.jsp" method="post" >
+		<table border="1" >
+			<tr>
+				<td align="center"><b>아이디</b></td>
+				<td><input type="text" name="p_id"></td>
+			</tr>
+			
+			<tr>
+				<td align="center"><b>비밀번호</b></td>
+				<td><input type="text" name ="p_pw"></td>
+			</tr>
+			
+			<tr>
+				<td align="center"><b>성명</b></td>
+				<td><input type="text" name="c_name"></td>
+			</tr>
+			
+			<tr>
+				<td align="center"><b>이메일</b></td>
+				<td><input type="text" name="c_email"></td>
+			</tr>
+			
+			<tr>
+				<td align="center"><b>연락처</b></td>
+				<td><input type="text" name ="c_tel"></td>
+			</tr>
+			
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" value="등록">
+					<input type="button"  onclick="location.href='custom01_list.jsp'" value="조회">
+				</td>
+			</tr>
+			
+	
+		</table>
+	
+	</form>
+
+</div>
+</body>
+</html>
